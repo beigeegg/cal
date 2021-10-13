@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Array 'e' 찾기</h3>
+'arr[ ]'가 'e'일 때 (arr[8], arr[9]),
+
+    <script>
+
+let arr = ['c','h','u','l','h','w','a','l','e','e']
+
+// find1 ()은 if문 doc.write로 출력
+
+function find1 () {
+    if (arr[8] == 'e' || arr[9] == 'e') { 
+        document.write(" '") + document.write("!!!") + document.write("' ")
+    } else {
+        '일치하지 않습니다.'
+    }
+}
+find1 (); 
+
+// find2는 if문 prompt, alert으로 출력
+
+let search = prompt('e는 몇 번째?', '');
+
+function find2 () {
+    if ( search == '8' || search == '9') {
+        alert('!!!')
+    } else if ( search == null) {
+        alert('취소되었습니다.')
+    } else { alert( '일치하지 않습니다.')}
+}
+find2 ();
+
+
+</script>
+
+<p> 나머지는 '일치하지 않습니다.'</p>
+</body>
+</html>
